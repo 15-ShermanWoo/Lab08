@@ -29,4 +29,5 @@ public class Spawnerscript : MonoBehaviour
         this.transform.position = new Vector3(transform.position.x, PositionY, transform.position.z);
         Instantiate(SpawnningObjects[randomInt], transform.position, transform.rotation);
     }
+    
 }
