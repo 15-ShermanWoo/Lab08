@@ -8,9 +8,10 @@ public class Player : MonoBehaviour
 {
     public float speed;
 
-    public static int score;
+    public static int Score;
+    public GameObject ScoreText;
 
-    public  GameObject ScoreText;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,7 @@ public class Player : MonoBehaviour
 
         transform.position = transform.position + new Vector3(0 , verticalInput * speed * Time.deltaTime, 0);
 
-        ScoreText.GetComponent<Text>().text = "Score:" + score;
+        ScoreText.GetComponent<Text>().text = "Score:" + Score;
 
     }
     public void OnCollisionEnter(Collision collision)
