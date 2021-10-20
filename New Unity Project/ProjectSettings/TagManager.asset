@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - Boarder
+  - Points
   layers:
   - Default
   - TransparentFX
