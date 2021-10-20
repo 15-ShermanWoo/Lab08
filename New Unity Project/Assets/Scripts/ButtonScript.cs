@@ -18,6 +18,7 @@ public class ButtonScript : MonoBehaviour
     }
     public void OnClickRestart()
     {
+        Player.Score = 0;
         SceneManager.LoadScene("GameScene");
     }
 }

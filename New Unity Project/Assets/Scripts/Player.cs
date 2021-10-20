@@ -29,6 +29,11 @@ public class Player : MonoBehaviour
 
         ScoreText.GetComponent<Text>().text = "Score:" + Score;
 
+        if (Score >= 15)
+        {
+            SceneManager.LoadScene("GameWin");
+        }
+
     }
     public void OnCollisionEnter(Collision collision)
     {
